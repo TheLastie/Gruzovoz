@@ -626,7 +626,48 @@ body{background:#e7dcc4!important;color:#172735!important;background-image:linea
 .footer{background:#e7dcc4!important;color:#172735!important;border-top:2px solid #172735!important}.footer strong,.footer span{color:#34434a!important}
 @media(max-width:760px){.hero::before{top:10px;right:12px;font-size:8px;padding:5px}.hero h1{font-size:clamp(32px,8vw,50px)!important}.hero .truck-scene::before,.hero .truck-scene::after{font-size:8px!important;padding:4px 5px!important}.rates{box-shadow:3px 3px 0 #c2b28f!important}}
 
-  </style>
+  
+/* Mobile readability repair: single-column service cards and stronger text contrast. */
+@media(max-width:700px){
+  .wrap{padding-left:20px!important;padding-right:20px!important}
+  #services.section{padding-top:28px!important}
+  #services .section-head{display:block!important;position:relative!important;margin:0 0 20px!important;padding:8px 0 18px!important;border-bottom:2px solid #172735!important}
+  #services .section-head::after{display:none!important}
+  #services .section-head h2{max-width:100%!important;font-family:"Arial Black",Arial,sans-serif!important;font-size:clamp(34px,8.4vw,46px)!important;line-height:1.04!important;letter-spacing:.005em!important;text-shadow:2px 2px 0 #efbd26!important;overflow-wrap:normal!important;word-break:normal!important}
+  #services .section-head p{display:block!important;width:auto!important;max-width:100%!important;margin:12px 0 0!important;padding:8px 10px!important;background:#f2e8d4!important;color:#26373d!important;border-left:4px solid #efbd26!important;box-shadow:3px 3px 0 #172735!important;font-size:15px!important;line-height:1.5!important}
+  #services .services{grid-template-columns:minmax(0,1fr)!important;gap:1px!important}
+  #services .service,#services .service:nth-child(even){display:grid!important;grid-template-columns:52px minmax(0,1fr)!important;align-items:start!important;gap:14px!important;min-width:0!important;min-height:0!important;padding:19px 16px!important}
+  #services .service>div:last-child{min-width:0!important}
+  #services .service h3{max-width:100%!important;margin:0 30px 8px 0!important;font-size:clamp(21px,5.6vw,25px)!important;line-height:1.08!important;overflow-wrap:normal!important;word-break:normal!important}
+  #services .service p{max-width:100%!important;color:#29383e!important;font-size:16px!important;line-height:1.5!important;font-weight:500!important}
+  .rate{padding:15px 16px!important}
+  .rate-label{font-size:14px!important;line-height:1.25!important}
+  .rate-value{font-size:clamp(25px,6.4vw,31px)!important;line-height:1.12!important;white-space:nowrap!important;gap:4px!important}
+  .rate-value small{font-size:clamp(11px,2.9vw,14px)!important;white-space:nowrap!important;line-height:1.1!important}
+  .rate-foot{font-size:13px!important;line-height:1.3!important}
+  .capacity-stamp{min-width:142px!important;padding:9px 12px!important}
+  .capacity-stamp span{font-size:12px!important;line-height:1.25!important}
+  .capacity-stamp strong{font-size:clamp(24px,6vw,30px)!important;line-height:1.05!important}
+  .capacity-stamp small{display:block!important;font-size:12px!important;line-height:1.3!important;white-space:normal!important}
+  .topbar .brand strong{color:#172735!important;text-shadow:none!important;font-size:17px!important;letter-spacing:0!important}
+  .topbar .brand small{color:#354650!important;text-shadow:none!important;font-size:12px!important}
+  .topbar .brand{min-width:0!important}
+  .care{grid-template-columns:minmax(0,1fr)!important;gap:24px!important;padding:24px 20px!important}
+  .care h2,.care h3,.care strong{color:#172735!important;text-shadow:none!important}
+  .care>div>p,.care p,.care-point p{color:#29383e!important;font-size:15px!important;line-height:1.5!important;font-weight:500!important}
+  .contact{padding:25px 20px!important;background:#f2e8d4!important;color:#172735!important}
+  .contact h2,.contact h3,.contact strong,.contact-number{color:#172735!important;text-shadow:none!important}
+  .contact p,.contact small{color:#29383e!important;text-shadow:none!important}
+}
+@media(max-width:420px){
+  .wrap{padding-left:16px!important;padding-right:16px!important}
+  .rate{grid-template-columns:minmax(0,1fr) auto!important;column-gap:8px!important;padding:13px 12px!important}
+  .rate-value{font-size:25px!important}
+  .rate-value small{font-size:11px!important}
+  #services .service{grid-template-columns:46px minmax(0,1fr)!important;gap:11px!important;padding:17px 12px!important}
+  #services .service-icon{width:46px!important;height:46px!important}
+}
+</style>
 </head>
 <body>
   <svg width="0" height="0" aria-hidden="true" style="position:absolute"><defs>
