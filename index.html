@@ -118,7 +118,61 @@
     .order-section{background-image:radial-gradient(#d4dbe6 1px,transparent 1px),radial-gradient(ellipse at 95% 5%,rgba(96,127,180,.11),transparent 38%);background-size:19px 19px,auto}
     .care{background:linear-gradient(135deg,#3b4a60,#34445b)}
     .contact{background:linear-gradient(115deg,#3b4a60,#304158)}
-    @media(max-width:760px){.contact{box-shadow:6px 7px 0 #e7dfcb}}
+    /* A practical, print-inspired visual language: real details over decoration. */
+    body{font-family:"Trebuchet MS","Segoe UI",Arial,sans-serif;background:#f3f4f2;background-image:none}
+    h1,h2,h3{font-family:"Trebuchet MS","Segoe UI",Arial,sans-serif;font-weight:700;letter-spacing:-.025em}
+    .topbar{box-shadow:none;background:#fbfaf7;border-bottom:1px solid #d7d9d5}
+    .brand-mark{border-radius:7px;box-shadow:none}
+    .brand strong{font-weight:700;letter-spacing:-.35px}
+    .messenger-btn{border:0;border-radius:4px;background:transparent;box-shadow:none}
+    .messenger-btn:hover{background:#e8edf3;border-color:transparent;transform:none}
+    .hero{isolation:auto;overflow:hidden;background:#edf1f5;padding-top:52px}
+    .hero::before,.hero::after{display:none}
+    .hero-grid{gap:38px}
+    .hero h1{max-width:600px;font-size:clamp(38px,4.5vw,60px);font-weight:700;line-height:1.04;letter-spacing:-.04em}
+    .location{padding:0;border:0;border-radius:0;background:none;box-shadow:none;color:#506a8c}
+    .hero-text{max-width:440px;color:#596779}
+    .hero-actions .primary{border-radius:6px;box-shadow:none}
+    .hero-actions .primary:hover{background:#1747ad;transform:translateY(-1px)}
+    .hero-actions .secondary{border-radius:6px;background:#f7f7f4}
+    .hero-facts span{border-radius:3px;background:#e2e7eb;color:#344d6c}
+    .truck-scene{padding:16px;background:#e4e9ed;border:1px solid #cbd3da}
+    .truck-scene::before{display:none}
+    .truck-scene>svg{max-height:430px}
+    .capacity-stamp{top:10px;right:10px;transform:none;border:1px solid #d8c490;border-radius:3px;background:#f0e3c4;box-shadow:none}
+    .capacity-stamp::before{display:none}
+    .truck-note{right:0;bottom:-39px;padding:0;border:0;border-radius:0;background:none;box-shadow:none;transform:none;color:#5b6673}
+    .rates{gap:0;margin-top:55px;background:#fbfaf7;border:1px solid #d5d8d8;border-radius:0;box-shadow:none}
+    .rate{border:0;border-radius:0;padding:22px 25px;box-shadow:none}
+    .rate+.rate{border-left:1px solid #d5d8d8}
+    .rate::after{display:none}
+    .rate:nth-child(1),.rate:nth-child(2),.rate:nth-child(3){background:transparent;border-color:#d5d8d8}
+    .rate:nth-child(1) .rate-label,.rate:nth-child(1) .rate-foot{color:var(--muted)}
+    .rate:nth-child(2) .rate-value{color:var(--navy)}
+    .rate:nth-child(2) .rate-label,.rate:nth-child(2) .rate-foot{color:var(--muted)}
+    .rate-value{font-size:34px}
+    .service-icon{border:1px solid #d9dfe2;border-radius:5px;box-shadow:none;background:#e9edef}
+    .care{background:#e7ecef;border:0;border-left:4px solid #245bd6;border-radius:0;box-shadow:none;padding:35px 40px;gap:50px}
+    .care h2,.care-point strong{color:#34445c}
+    .care>div>p,.care-point p{color:#5d6976}
+    .care-point>.icon{color:#245bd6}
+    .care::after{display:none}
+    .territory-visual{background:#f8f8f5;background-image:none;border:1px solid #d6d9d8;border-radius:3px;box-shadow:none}
+    .map-caption{border-top:1px solid #d6d9d8}
+    .order-section{background:#eaedef;background-image:none}
+    .order-copy>p,.price-note{background:none}
+    .order-form{border:1px solid #d4d9dc;border-top:3px solid #245bd6;border-radius:3px;box-shadow:none;background:#fbfaf7}
+    input,textarea{border-radius:3px;background:#fff}
+    .segmented{border-radius:3px;background:#e8ebec}
+    .segmented button{border-radius:2px}
+    .form-submit{border-radius:4px}
+    .contact{border-radius:3px;background:#263d59;box-shadow:none}
+    .contact::before{display:none}
+    .contact .primary{border-radius:4px;background:#ffdc82;border-color:#ffdc82}
+    .contact .primary:hover{background:#ffe7aa}
+    dialog{border-radius:4px}
+    .dialog-close{border-radius:3px}
+    @media(max-width:760px){.hero-grid{gap:20px}.truck-scene{padding:10px}.truck-note{bottom:-31px}.rates{margin-top:45px}.rate{padding:17px 12px}.care{padding:26px 22px;gap:26px}.contact{box-shadow:none}}
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}}
   </style>
 </head>
@@ -159,11 +213,9 @@
         <div class="hero-facts"><span>Газель 1,5–2 т</span><span>Помощь грузчиков</span></div>
         <div class="personal"><span aria-hidden="true"><svg class="icon"><use href="#phone"/></svg></span><span>Прямой контакт с водителем</span></div>
       </div><div class="truck-scene">
-        <svg viewBox="0 0 590 460" role="img" aria-label="Иллюстрация грузового автомобиля">
+        <svg viewBox="30 110 530 270" role="img" aria-label="Иллюстрация грузового автомобиля">
           <defs><linearGradient id="body" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#ffffff"/><stop offset="1" stop-color="#e2e9f4"/></linearGradient><linearGradient id="window" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#a6c5ec"/><stop offset="1" stop-color="#6089bf"/></linearGradient><filter id="shadow"><feGaussianBlur stdDeviation="8"/></filter></defs>
-          <circle cx="312" cy="218" r="179" fill="#edf3fc"/><circle cx="312" cy="218" r="153" fill="none" stroke="#d6e3f6" stroke-width="1.5" stroke-dasharray="5 10"/>
-          <path d="M70 297c-19-104 88-188 182-165s145 22 179-53" fill="none" stroke="#c4d5ef" stroke-width="2" stroke-dasharray="7 7"/><circle cx="432" cy="78" r="9" fill="#245bd6"/><circle cx="432" cy="78" r="3" fill="white"/>
-          <g fill="#d5e1f2"><path d="M92 237h24v75H92zM117 201h32v111h-32zM153 221h16v91h-16zM455 208h25v104h-25zM484 231h25v81h-25z"/><path d="M126 201v-15h2v15M467 208v-24h2v24"/></g>
+          <path d="M92 237h24v75H92zM117 201h32v111h-32zM153 221h16v91h-16zM455 208h25v104h-25zM484 231h25v81h-25z" fill="#e8edf3"/>
           <path d="M54 338h485" stroke="#d1deee" stroke-width="2"/><ellipse cx="296" cy="343" rx="207" ry="13" fill="#1a3c72" opacity=".13" filter="url(#shadow)"/>
           <path d="m95 162 272-13 25 17v149H95Z" fill="#ced9ea"/><path d="M95 162h272v153H95z" fill="url(#body)" stroke="#c5d2e4" stroke-width="1.5"/>
           <path d="M101 168h259v136H101z" fill="none" stroke="#e8eef7" stroke-width="2"/><path d="M107 175v122M353 175v122" stroke="#d8e2ef" stroke-width="2"/>
@@ -177,7 +229,6 @@
           <path d="M492 289h14v11h-14z" fill="#ffd36b"/><path d="M95 308h6v9h-6z" fill="#ee8d80"/><rect x="486" y="309" width="27" height="9" rx="2" fill="#859ab5"/>
           <g transform="translate(48 336)"><path d="m0-34 25-9 26 9v34H0Z" fill="#e7c991"/><path d="M0-34h51M25-34v34" stroke="#be9b63"/><path d="M20-34h10v13H20z" fill="#f6e8cb"/></g>
           <g transform="translate(504 335)"><path d="M0-23h25V0H0z" fill="#efd9b1"/><path d="M10-23h5v9h-5z" fill="#fcf0dc"/></g>
-          <g transform="translate(130 83)" id="care-badge"><rect width="185" height="39" rx="19.5" fill="white" stroke="#dce6f4"/><circle cx="23" cy="19" r="8" fill="#e0edff"/><path d="m19 19 3 3 5-6" fill="none" stroke="#245bd6" stroke-width="1.7"/><text x="40" y="24" font-family="Arial,sans-serif" font-size="12" fill="#355071">Аккуратно, как себе</text></g>
         </svg>
         <div class="capacity-stamp"><span>Грузоподъёмность</span><strong>1,5–2 т</strong><small>Загрузку согласуем заранее</small></div>
         <div class="truck-note"><svg class="icon" aria-hidden="true"><use href="#pin"/></svg>Маршрут согласуем заранее</div>
