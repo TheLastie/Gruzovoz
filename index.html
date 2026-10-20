@@ -512,6 +512,14 @@
     .footer>div,.footer>span{padding-inline:0!important}
     @media(max-width:760px){.footer{padding:20px 24px!important;gap:12px!important}.faq-section .faq-intro h2{font-size:clamp(32px,8vw,44px)!important}}
 
+
+    /* Let the real truck photo lead the hero instead of shrinking beside the copy. */
+    .hero-grid{grid-template-columns:1fr!important;gap:34px!important}
+    .hero-grid>div:first-child{max-width:900px}
+    .hero .truck-scene{width:100%!important;max-width:none!important;aspect-ratio:3/2!important;margin:0!important;transform:none!important}
+    .truck-photo{object-fit:contain!important;object-position:center!important}
+    @media(max-width:760px){.hero-grid{gap:24px!important}.hero .truck-scene{width:100vw!important;margin-left:calc((100% - 100vw)/2)!important;aspect-ratio:3/2!important}}
+
   </style>
 </head>
 <body>
