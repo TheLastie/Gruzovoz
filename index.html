@@ -175,6 +175,48 @@
     dialog{border-radius:4px}
     .dialog-close{border-radius:3px}
     @media(max-width:760px){.hero-grid{gap:20px}.truck-scene{padding:10px}.truck-note{bottom:-31px}.rates{margin-top:45px}.rate{padding:17px 12px}.care{padding:26px 22px;gap:26px}.contact{box-shadow:none}}
+    /* Garage direction: charcoal, workshop orange and practical route markings. */
+    :root{--blue:#ed9a36;--navy:#f0eee6;--ink:#e5e3db;--muted:#aeb5b2;--pale:#2a3539;--line:#465256;--yellow:#ed9a36;--white:#f1efe7}
+    body{background:#dfe3df;color:var(--ink)}
+    .topbar{background:rgba(32,42,46,.97);border-bottom-color:#465256;color:#f1efe7}
+    .brand-mark{background:#ed9a36;color:#202a2e}
+    .brand small,.header-actions,.personal{color:#b8c0bd}
+    .hero{background:#202a2e;color:#f1efe7}
+    .hero::before{background:repeating-linear-gradient(135deg,transparent 0 15px,#ed9a3614 15px 17px);opacity:.55}
+    .hero h1{color:#f1efe7}
+    .hero-text>p,.hero-facts,.location{color:#c4cbc8}
+    .primary,.form-submit{background:#ed9a36;border-color:#ed9a36;color:#202a2e;box-shadow:0 4px 0 #a75d1b}
+    .primary:hover,.form-submit:hover{background:#f4aa4b}
+    .secondary{background:#303c40;border-color:#596568;color:#f1efe7}
+    .secondary:hover{background:#39474b}
+    .truck-scene{background:#2a3539;border:1px solid #566267;box-shadow:8px 8px 0 #161f22}
+    .truck-scene svg{filter:saturate(.82)}
+    .capacity-stamp{background:#ed9a36;color:#202a2e;border-color:#f4b45e;box-shadow:4px 4px 0 #11191b}
+    .truck-note{background:#303c40;color:#e5e3db;border-color:#566267}
+    .rates{background:#202a2e;border-color:#596568;box-shadow:0 7px 0 #161f22}
+    .rate,.rate:nth-child(1),.rate:nth-child(2),.rate:nth-child(3){background:#2a3539;border-color:#596568;color:#e5e3db}
+    .rate:nth-child(1) .rate-label,.rate:nth-child(1) .rate-foot,.rate:nth-child(2) .rate-label,.rate:nth-child(2) .rate-foot{color:#b8c0bd}
+    .rate:nth-child(1) .rate-value,.rate:nth-child(2) .rate-value,.rate:nth-child(3) .rate-value{color:#f4a849}
+    .rate::after{opacity:.22}
+    .care{background:#263236;border-left-color:#ed9a36;color:#e5e3db}
+    .care h2,.care-point strong{color:#f1efe7}
+    .care>div>p,.care-point p{color:#c4cbc8}
+    .care-point>.icon{color:#f4a849}
+    .territory-visual{background-color:#29363a;background-image:linear-gradient(#ffffff0b 1px,transparent 1px),linear-gradient(90deg,#ffffff0b 1px,transparent 1px);border-color:#566267;color:#e5e3db}
+    .map-caption{border-top-color:#566267}
+    .order-section{background:#dfe3df;background-image:repeating-linear-gradient(135deg,#202a2e06 0 12px,#202a2e0d 12px 14px)}
+    .order-form{background:#f4f2eb;border-color:#c6c9c2;border-top-color:#ed9a36;box-shadow:7px 7px 0 #cbd0ca}
+    input,textarea,.segmented{background:#fffefa;color:#283236;border-color:#c5cbc7}
+    .segmented button{color:#364248}
+    .segmented button[aria-pressed="true"]{background:#29363a;color:#f1efe7}
+    .contact{background:#202a2e;color:#f1efe7;border:1px solid #465256;box-shadow:7px 7px 0 #c7cfca}
+    .contact::before{border-color:#ed9a36}
+    .contact .primary{background:#ed9a36;color:#202a2e}
+    .footer{color:#606d6c}
+    .mobile-bar{background:rgba(32,42,46,.98);border-top-color:#465256;color:#f1efe7}
+    .mobile-bar>span,.mobile-bar small{color:#bdc5c1}
+    dialog{background:#f4f2eb;color:#283236;border-color:#c5cbc7}
+    @media(max-width:760px){.truck-scene{box-shadow:5px 5px 0 #161f22}.rates{box-shadow:0 5px 0 #161f22}.order-form{box-shadow:4px 4px 0 #cbd0ca}}
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}}
   </style>
 </head>
