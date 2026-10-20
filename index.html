@@ -667,6 +667,19 @@ body{background:#e7dcc4!important;color:#172735!important;background-image:linea
   #services .service{grid-template-columns:46px minmax(0,1fr)!important;gap:11px!important;padding:17px 12px!important}
   #services .service-icon{width:46px!important;height:46px!important}
 }
+
+/* Desktop contrast repair for care panel, contacts, form and FAQ spacing. */
+#services .care>div>p,#services .care .care-point p{color:#26373d!important;text-shadow:none!important;font-size:15px!important;line-height:1.55!important;font-weight:550!important}
+#services .care h2,#services .care .care-point strong{color:#172735!important;text-shadow:none!important}
+#contacts.contact h2{color:#172735!important;font-family:"Arial Black",Arial,sans-serif!important;font-size:clamp(32px,4vw,44px)!important;line-height:1.08!important;letter-spacing:.01em!important;text-shadow:none!important;transform:none!important}
+#contacts.contact p,#contacts.contact .contact-number{color:#26373d!important;text-shadow:none!important}
+#order-form .field-label,#order-form label,#order-form .checkbox{color:#172735!important;font-size:15px!important;font-weight:700!important}
+#order-form input,#order-form textarea{color:#172735!important;font-size:15px!important}
+#order-form input::placeholder,#order-form textarea::placeholder{color:#53616a!important;opacity:1!important}
+#order-form .segmented button{font-size:15px!important}
+.faq-grid details>summary,.faq-grid details[open]>summary{display:flex!important;align-items:center!important;min-height:64px!important;padding:17px 38px 17px 16px!important;line-height:1.4!important}
+.faq-grid details>p{margin:0!important;padding:0 16px 20px!important;line-height:1.55!important}
+@media(max-width:760px){#contacts.contact h2{font-size:clamp(30px,7vw,38px)!important}#order-form .field-label,#order-form label,#order-form .checkbox{font-size:14px!important}}
 </style>
 </head>
 <body>
@@ -755,12 +768,12 @@ body{background:#e7dcc4!important;color:#172735!important;background-image:linea
       </div>
     </div></section>
     <section class="order-section" id="order"><div class="wrap order-grid">
-      <div class="order-copy"><h2>Куда едем<br>и что берём?</h2><p>Укажите маршрут и груз. Получится готовое сообщение для водителя — останется обсудить детали и свободное время.</p><div class="price-note"><svg class="icon" aria-hidden="true"><use href="#info"/></svg><span>Цена зависит от маршрута, объёма груза и погрузки. Точную стоимость и порядок расчёта километража согласуем перед поездкой.</span></div></div>
+      <div class="order-copy"><h2>Куда едем<br>и что берём?</h2><p>Напишите адреса и что нужно перевезти. Подготовим сообщение для водителя, чтобы согласовать маршрут, время и стоимость.</p><div class="price-note"><svg class="icon" aria-hidden="true"><use href="#info"/></svg><span>Цена зависит от маршрута, объёма груза и погрузки. Точную стоимость и порядок расчёта километража согласуем перед поездкой.</span></div></div>
       <form class="order-form" id="order-form">
         <div class="field-label" id="trip-label">Тип поездки</div><div class="segmented" role="group" aria-labelledby="trip-label"><button type="button" data-trip="city" aria-pressed="true">По Уфе</button><button type="button" data-trip="outside" aria-pressed="false">За город / межгород</button></div>
-        <div class="field-row"><div class="field"><label for="from">Откуда забрать</label><input id="from" name="from" placeholder="Улица, дом или населённый пункт" required maxlength="160" autocomplete="off"></div><div class="field"><label for="to">Куда доставить</label><input id="to" name="to" placeholder="Адрес назначения" required maxlength="160" autocomplete="off"></div></div>
-        <div class="field"><label for="cargo">Что перевозим</label><textarea id="cargo" name="cargo" placeholder="Например: диван, холодильник и 8 коробок. Укажите этажи и наличие лифта." required maxlength="1200"></textarea></div>
-        <div class="field"><label for="when">Когда удобно</label><input id="when" name="when" placeholder="Например: в субботу после 12:00" maxlength="120"></div>
+        <div class="field-row"><div class="field"><label for="from">Адрес отправления</label><input id="from" name="from" placeholder="Улица, дом или населённый пункт" required maxlength="160" autocomplete="off"></div><div class="field"><label for="to">Адрес доставки</label><input id="to" name="to" placeholder="Адрес назначения" required maxlength="160" autocomplete="off"></div></div>
+        <div class="field"><label for="cargo">Что нужно перевезти</label><textarea id="cargo" name="cargo" placeholder="Например: диван, холодильник и 8 коробок. Укажите этажи и наличие лифта." required maxlength="1200"></textarea></div>
+        <div class="field"><label for="when">Когда нужна машина</label><input id="when" name="when" placeholder="Например: в субботу после 12:00" maxlength="120"></div>
         <label class="checkbox"><input type="checkbox" id="loaders" name="loaders"><span>Нужны грузчики <small>· от 700 ₽/час</small></span></label>
         <div class="estimate"><span id="estimate-label">Перевозка по Уфе</span><strong id="estimate-value">от 1 500 ₽</strong></div>
         <button class="btn primary form-submit" type="submit">Подготовить сообщение<svg class="icon" aria-hidden="true"><use href="#message"/></svg></button>
@@ -775,7 +788,7 @@ body{background:#e7dcc4!important;color:#172735!important;background-image:linea
       <details><summary>Как подготовить хрупкие вещи?</summary><p>Предупредите о хрупком грузе заранее. Упакуйте мелкие вещи, освободите мебель и зафиксируйте дверцы. Если нужна помощь с подготовкой, обсудите её с водителем перед поездкой.</p></details>
       <details><summary>Можно уехать дальше пригорода?</summary><p>Да, выполняем междугородние перевозки. Укажите населённый пункт, дату и груз — согласуем возможность поездки и стоимость.</p></details>
     </div></div></section>
-    <div class="wrap"><section class="contact" id="contacts"><div><h2>Давайте всё перевезём.</h2><p>Позвоните или напишите: откуда, куда и что везём. Остальное обсудим.</p><a class="contact-number" href="tel:+79872526511">+7 987 252-65-11</a></div><div class="contact-actions"><a class="btn primary" href="tel:+79872526511"><svg class="icon" aria-hidden="true"><use href="#phone"/></svg>Позвонить</a><div class="channels" aria-label="Мессенджеры водителя">
+    <div class="wrap"><section class="contact" id="contacts"><div><h2>Давайте всё перевезём.</h2><p>Позвоните или напишите — обсудим маршрут, груз и время поездки.</p><a class="contact-number" href="tel:+79872526511">+7 987 252-65-11</a></div><div class="contact-actions"><a class="btn primary" href="tel:+79872526511"><svg class="icon" aria-hidden="true"><use href="#phone"/></svg>Позвонить</a><div class="channels" aria-label="Мессенджеры водителя">
       <a class="messenger-btn" href="https://wa.me/79872526511" target="_blank" rel="noopener noreferrer" aria-label="Написать в WhatsApp" title="WhatsApp"><svg viewBox="0 0 32 32" aria-hidden="true"><use href="#whatsapp-logo"/></svg></a>
       <a class="messenger-btn" href="https://t.me/Antonewrei" target="_blank" rel="noopener noreferrer" aria-label="Написать в Telegram" title="Telegram"><svg viewBox="0 0 32 32" aria-hidden="true"><use href="#telegram-logo"/></svg></a>
       <button class="messenger-btn" type="button" data-channel="max" aria-label="Написать в MAX" title="MAX"><svg viewBox="0 0 32 32" aria-hidden="true"><use href="#max-logo"/></svg></button>
