@@ -10,14 +10,14 @@
   <meta name="theme-color" content="#182225">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Crect width='48' height='48' rx='10' fill='%23f18a24'/%3E%3Cpath d='M8 15h21v18H8zM29 22h6l6 7v4H29' fill='none' stroke='%23182225' stroke-width='2.8'/%3E%3Ccircle cx='16' cy='34' r='4' fill='%23182225'/%3E%3Ccircle cx='34' cy='34' r='4' fill='%23182225'/%3E%3C/svg%3E">
   <meta name="description" content="Аккуратные грузоперевозки на Газели 1,5–2 т по Уфе и пригороду до 20 км. По городу от 1 500 ₽, межгород 40 ₽/км, грузчики от 700 ₽/час.">
-  <title>Грузоперевозки на Газели в Уфе — межгород</title>
+  <title>Грузоперевозки в Уфе на Газели от 1 500 ₽ — грузчики и межгород</title>
   <link rel="canonical" href="https://thelastie.github.io/Gruzovoz/">
   <meta name="geo.region" content="RU-BA">
   <meta name="geo.placename" content="Уфа, Республика Башкортостан">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="ru_RU">
   <meta property="og:site_name" content="Грузоперевозки на Газели — Уфа">
-  <meta property="og:title" content="Грузоперевозки на Газели в Уфе — межгород">
+  <meta property="og:title" content="Грузоперевозки в Уфе на Газели от 1 500 ₽ — грузчики и межгород">
   <meta property="og:description" content="Уфа и пригород до 20 км. По городу от 1 500 ₽, межгород 40 ₽/км, грузчики от 700 ₽/час. Перевозка мебели, техники и вещей на Газели 1,5–2 т.">
   <meta property="og:url" content="https://thelastie.github.io/Gruzovoz/">
   <meta property="og:image" content="https://thelastie.github.io/Gruzovoz/assets/gazelle-actual-anton-wide.png">
@@ -27,6 +27,7 @@
   {
     "@context": "https://schema.org",
     "@type": "MovingCompany",
+    "@id": "https://thelastie.github.io/Gruzovoz/#business",
     "name": "Грузоперевозки на Газели — Уфа",
     "description": "Аккуратные грузоперевозки по Уфе и пригороду до 20 км; междугородние поездки по согласованному маршруту.",
     "url": "https://thelastie.github.io/Gruzovoz/",
@@ -38,7 +39,7 @@
       {"@type":"AdministrativeArea","name":"Республика Башкортостан"},
       {"@type":"Country","name":"Россия"}
     ],
-    "availableLanguage": "Russian",
+    "contactPoint": {"@type":"ContactPoint","telephone":"+7-987-252-6511","contactType":"customer service","availableLanguage":"ru"},
     "makesOffer": [
       {"@type":"Offer","itemOffered":{"@type":"Service","name":"Грузоперевозки на Газели по Уфе"}},
       {"@type":"Offer","itemOffered":{"@type":"Service","name":"Междугородние перевозки из Уфы"}},
@@ -689,6 +690,12 @@ body{background:#e7dcc4!important;color:#172735!important;background-image:linea
 .faq-grid details>summary,.faq-grid details[open]>summary{display:flex!important;align-items:center!important;min-height:64px!important;padding:17px 38px 17px 16px!important;line-height:1.4!important}
 .faq-grid details>p{margin:0!important;padding:0 16px 20px!important;line-height:1.55!important}
 @media(max-width:760px){#contacts.contact h2{font-size:clamp(30px,7vw,38px)!important}#order-form .field-label,#order-form label,#order-form .checkbox{font-size:14px!important}}
+    .service-detail{display:inline-block;margin-top:12px;text-decoration:underline;text-underline-offset:4px;font-size:14px;font-weight:700;line-height:1.6}
+    .service h3 a:hover{text-decoration:underline;text-underline-offset:4px}
+    .care .service-detail{color:#fff1d3}
+    .map-preview{min-height:310px;display:grid;align-content:center;justify-items:center;gap:20px;padding:32px;text-align:center;color:#172735;background:repeating-linear-gradient(45deg,#f2e8d4 0 24px,#e8dfcd 24px 26px)}
+    .map-preview p{max-width:320px}.map-preview .btn{background:#efbd26;color:#172735;border:2px solid #172735}
+    @media(max-width:760px){.map-preview{min-height:280px}}
 </style>
 </head>
 <body>
@@ -755,21 +762,22 @@ body{background:#e7dcc4!important;color:#172735!important;background-image:linea
     <section class="section" id="services"><div class="wrap">
       <div class="section-head"><h2>Из квартиры, из магазина.<br>И куда вам нужно.</h2><p>От одной покупки до переезда. Расскажите, что нужно перевезти — подберём удобный вариант.</p></div>
       <div class="services">
-        <article class="service"><div class="service-icon"><svg class="icon" aria-hidden="true"><use href="#sofa"/></svg></div><div><h3>Мебель и техника</h3><p>Диван, шкаф, холодильник или стиральная машина. Бережно перевезу ваши вещи на новый адрес.</p></div></article>
-        <article class="service"><div class="service-icon"><svg class="icon" aria-hidden="true"><use href="#home"/></svg></div><div><h3>Квартирный переезд</h3><p>Коробки, мебель и всё, что вы забираете с собой. Грузчики помогут с погрузкой и разгрузкой.</p></div></article>
+        <article class="service"><div class="service-icon"><svg class="icon" aria-hidden="true"><use href="#sofa"/></svg></div><div><h3><a href="perevozka-mebeli-ufa/">Перевозка мебели и техники</a></h3><p>Диван, шкаф, холодильник или стиральная машина. Бережно перевезу ваши вещи на новый адрес.</p><a class="service-detail" href="perevozka-mebeli-ufa/">Стоимость и подготовка мебели →</a></div></article>
+        <article class="service"><div class="service-icon"><svg class="icon" aria-hidden="true"><use href="#home"/></svg></div><div><h3><a href="kvartirnyy-pereezd-ufa/">Квартирный переезд</a></h3><p>Коробки, мебель и всё, что вы забираете с собой. Грузчики помогут с погрузкой и разгрузкой.</p><a class="service-detail" href="kvartirnyy-pereezd-ufa/">Как спланировать переезд →</a></div></article>
         <article class="service"><div class="service-icon"><svg class="icon" aria-hidden="true"><use href="#box"/></svg></div><div><h3>Покупки и стройматериалы</h3><p>Заберу заказ из магазина или со склада. Размеры и вес груза согласуем перед поездкой.</p></div></article>
-        <article class="service"><div class="service-icon"><svg class="icon" aria-hidden="true"><use href="#truck"/></svg></div><div><h3>На дачу и в другой город</h3><p>Вещи для дачи, переезд за город или доставка по межгороду. Направление и время обсудим лично.</p></div></article>
+        <article class="service"><div class="service-icon"><svg class="icon" aria-hidden="true"><use href="#truck"/></svg></div><div><h3><a href="mezhgorod-iz-ufy/">На дачу и в другой город</a></h3><p>Вещи для дачи, переезд за город или доставка по межгороду. Направление и время обсудим лично.</p><a class="service-detail" href="mezhgorod-iz-ufy/">Межгород: маршрут и расчёт цены →</a></div></article>
       </div>
       <div class="care"><div><h2>Бережно перевезём<br>ваши вещи.</h2><p>Заранее обсудим маршрут, время, объём груза и помощь грузчиков.</p></div><div class="care-points">
         <div class="care-point"><svg class="icon" aria-hidden="true"><use href="#check"/></svg><div><strong>Бережно к вашим вещам</strong><p>Для хрупкого и деликатного груза заранее обсудим детали перевозки.</p></div></div>
         <div class="care-point"><svg class="icon" aria-hidden="true"><use href="#check"/></svg><div><strong>Стоимость до поездки</strong><p>Уточним маршрут, объём, этаж и помощь грузчиков. Согласуем итоговую цену.</p></div></div>
-        <div class="care-point"><svg class="icon" aria-hidden="true"><use href="#check"/></svg><div><strong>Помощь с тяжёлым</strong><p>Грузчики есть. Скажите заранее, что нужно вынести, погрузить и поднять.</p></div></div>
+        <div class="care-point"><svg class="icon" aria-hidden="true"><use href="#check"/></svg><div><strong>Помощь с тяжёлым</strong><p>Грузчики есть. Скажите заранее, что нужно вынести, погрузить и поднять.</p><a class="service-detail" href="gazel-s-gruzchikami-ufa/">Газель с грузчиками: условия заказа →</a></div></div>
       </div></div>
     </div></section>
     <section id="area"><div class="wrap territory">
       <div class="territory-text"><h2>По Уфе.<br>За город.<br>Дальше — тоже.</h2><p>Расскажите, куда нужно ехать, — поедем. По Уфе, на дачу, в соседний посёлок или другой город.</p><div class="route-strip"><svg class="icon" aria-hidden="true"><use href="#pin"/></svg>Ваш адрес<span class="route-line" aria-hidden="true"></span>Нужное место</div></div>
       <div class="territory-visual">
-        <iframe src="https://yandex.ru/map-widget/v1/?ll=55.958741%2C54.735147&amp;z=10&amp;lang=ru_RU" title="Карта Уфы и окрестностей в Яндекс Картах" loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        <div class="map-preview" id="map-preview"><p>Уфа и окрестности — территория перевозок. Конкретный маршрут согласуем по вашим адресам.</p><button class="btn" type="button" id="load-map">Показать интерактивную карту</button></div>
+        <iframe hidden data-src="https://yandex.ru/map-widget/v1/?ll=55.958741%2C54.735147&amp;z=10&amp;lang=ru_RU" title="Карта Уфы и окрестностей в Яндекс Картах" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
         <div class="map-caption"><span>Уфа и окрестности</span><div class="map-actions"><a href="https://yandex.ru/maps/172/ufa/?ll=55.958741%2C54.735147&amp;z=10" target="_blank" rel="noopener noreferrer">Открыть Яндекс Карты</a><a class="map-route-link" id="map-route-link" href="#order" target="_blank" rel="noopener noreferrer">Построить маршрут</a></div><span class="map-route-status" id="map-route-status" role="status" aria-live="polite">Маршрут построится по адресам из формы.</span></div>
       </div>
     </div></section>
@@ -811,6 +819,12 @@ body{background:#e7dcc4!important;color:#172735!important;background-image:linea
     let trip = 'city';
     let previousFocus;
     const mapRouteLink = $('#map-route-link');
+    $('#load-map').addEventListener('click', () => {
+      const map = $('.territory-visual iframe');
+      map.src = map.dataset.src;
+      map.hidden = false;
+      $('#map-preview').remove();
+    });
     mapRouteLink.addEventListener('click', event => {
       const from = $('#from').value.trim();
       const to = $('#to').value.trim();
