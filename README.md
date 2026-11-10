@@ -2,7 +2,7 @@
 
 Сайт частных грузоперевозок на Газели грузоподъёмностью 1,5–2 т. Перевозка мебели, бытовой техники, покупок и вещей для переезда по Уфе и пригороду до 20 км. Междугородние поездки — по согласованному маршруту. По запросу доступны грузчики.
 
-**Сайт:** [Открыть сайт](https://thelastie.github.io/Gruzovoz/)
+**Сайт:** [Открыть сайт](https://perevozki-ufa.ru/)
 
 ## Тарифы
 
@@ -14,10 +14,10 @@
 
 ## Страницы услуг
 
-- [Перевозка мебели и техники](https://thelastie.github.io/Gruzovoz/perevozka-mebeli-ufa/)
-- [Квартирный переезд](https://thelastie.github.io/Gruzovoz/kvartirnyy-pereezd-ufa/)
-- [Газель с грузчиками](https://thelastie.github.io/Gruzovoz/gazel-s-gruzchikami-ufa/)
-- [Межгород из Уфы](https://thelastie.github.io/Gruzovoz/mezhgorod-iz-ufy/)
+- [Перевозка мебели и техники](https://perevozki-ufa.ru/perevozka-mebeli-ufa/)
+- [Квартирный переезд](https://perevozki-ufa.ru/kvartirnyy-pereezd-ufa/)
+- [Газель с грузчиками](https://perevozki-ufa.ru/gazel-s-gruzchikami-ufa/)
+- [Межгород из Уфы](https://perevozki-ufa.ru/mezhgorod-iz-ufy/)
 
 ## Проверка и продвижение
 

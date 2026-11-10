@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://thelastie.github.io/Gruzovoz/sitemap.xml
+Sitemap: https://perevozki-ufa.ru/sitemap.xml

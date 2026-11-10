@@ -6,7 +6,7 @@ from urllib.parse import unquote, urlsplit
 import xml.etree.ElementTree as ET
 
 ROOT = Path(__file__).resolve().parents[1]
-BASE = 'https://thelastie.github.io/Gruzovoz/'
+BASE = 'https://perevozki-ufa.ru/'
 SLUGS = ('', 'perevozka-mebeli-ufa/', 'kvartirnyy-pereezd-ufa/',
          'gazel-s-gruzchikami-ufa/', 'mezhgorod-iz-ufy/')
 

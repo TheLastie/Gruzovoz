@@ -1,5 +1,7 @@
 # Продвижение грузоперевозок в Уфе
 
+> **10 ноября 2026:** сайт переведён на собственный домен https://perevozki-ufa.ru/ (DNS: четыре A-записи GitHub Pages + CNAME `www`). Старый адрес `thelastie.github.io/Gruzovoz/` GitHub перенаправляет на новый. Ниже в истории замеров указаны старые адреса. Нужно заново добавить `perevozki-ufa.ru` в Яндекс Вебмастер и Search Console и отправить `https://perevozki-ufa.ru/sitemap.xml`.
+
 Проверка и изменения: 5 ноября 2026 года. Адрес: https://thelastie.github.io/Gruzovoz/.
 
 ## Проверка запроса от 5 ноября 2026 года
